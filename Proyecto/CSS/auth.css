@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'RobotoCondensedItalic';
+  src: url('RECURSOS/RobotoCondensed-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+  font-family: 'RobotoCondensedItalic', sans-serif;
+  background-color: #CFE6D7;
+  color: #CFE6D7;
+}
+
+.auth-container {
+  background-color: #009072;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.auth-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00788C;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.auth-container button:hover {
+  background-color: #AD4E35;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.auth-link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #d32f2f;
+  margin-top: 16px;
+  text-align: center;
+  display: none;
+}
+
+.user-info {
+    display: flex; /* Cambiado a flex para alinear elementos */
+    align-items: center;
+    gap: 15px;
+}
+
+/* Agrega esto a tu archivo CSS */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00788C;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #AD4E35;
+}
+
+/* Estilo para que coincida con tus otros botones */
+form .button {
+    margin: 10px 5px;
+}
