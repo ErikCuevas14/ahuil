@@ -194,6 +194,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const shareWhatsappBtn = document.getElementById('shareWhatsappBtn');
+    if (shareWhatsappBtn) {
+        shareWhatsappBtn.addEventListener('click', () => {
+            const message = "¡Echa un vistazo a Ahuil! Es una plataforma increíble. Descárgala aquí: https://ahuil.wuaze.com/?i=1"; 
+            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    }
+
     // Cargar comentarios al inicio
     loadComments();
 });
